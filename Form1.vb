@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-    Dim num1, num2, num3 As Integer
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
         num2 = Val(TextBox2.Text)
@@ -13,6 +12,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim num1, num2, num3 As Integer
         If num1 > num2 And num1 > num3 Then
             If num2 > num3 Then
                 TextBox4.Text = num1 & "; " & num2 & "; " & num3
