@@ -4,7 +4,6 @@
         num1 = Val(TextBox1.Text)
         num2 = Val(TextBox2.Text)
         num3 = Val(TextBox3.Text)
-
         If num1 > num2 And num1 > num3 Then
             If num2 > num3 Then
                 TextBox4.Text = num1 & "; " & num2 & "; " & num3
