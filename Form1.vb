@@ -1,18 +1,9 @@
 ﻿Public Class Form1
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-        num2 = Val(TextBox2.Text)
-    End Sub
-
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
-        num3 = Val(TextBox3.Text)
-    End Sub
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        num1 = Val(TextBox1.Text)
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim num1, num2, num3 As Integer
+        num1 = Val(TextBox1.Text)
+        num2 = Val(TextBox2.Text)
+        num3 = Val(TextBox3.Text)
         If num1 > num2 And num1 > num3 Then
             If num2 > num3 Then
                 TextBox4.Text = num1 & "; " & num2 & "; " & num3
